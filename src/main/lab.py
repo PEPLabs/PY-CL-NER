@@ -10,7 +10,7 @@ Named entity recognition, or NER, is the process of extracting Named Entities fr
 We'll be using NLTK's ne_chunk function to detect named entities. 
 """
 
-from nltk import ne_chunk, extract_rels
+from nltk import ne_chunk
 from nltk.tag import pos_tag
 from nltk.tokenize import word_tokenize
 
