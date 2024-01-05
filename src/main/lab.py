@@ -10,7 +10,7 @@ Named entity recognition, or NER, is the process of extracting Named Entities fr
 We'll be using NLTK's ne_chunk function to detect named entities. 
 """
 
-from nltk import ne_chunk
+from nltk import ne_chunk, extract_rels
 from nltk.tag import pos_tag
 from nltk.tokenize import word_tokenize
 
@@ -31,7 +31,7 @@ def sampleNER():
     # result.draw() #this will open a new window with the tree rendering
 
 """
-Create your own text with named entities and complete the following function to recognize Named Entities for your text 
+Create your own text that includes mentions of named entities of type PERSON and ORGANIZATION and complete the following function to recognize Named Entities for your text. The test will look for the mention of PERSON and ORGANIZATION type named entities. 
 """
 def nerExercise():    
     ner_text = ""
